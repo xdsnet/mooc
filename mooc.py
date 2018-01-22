@@ -186,9 +186,9 @@ def getAll(url):
 
 if __name__ == '__main__':
     # 课程地址
-    url = 'http://www.feemic.cn/mooc_search/1002321008'
-    # if sys.argv.__len__() == 1:  # 未输入课程地址
-    #     print("请输入课程url")
-    #     os._exit(0)
-    # url = sys.argv[1]
+#     url = 'http://www.feemic.cn/mooc_search/1002321008'
+    if sys.argv.__len__() == 1:  # 未输入课程地址
+        print("请输入课程url")
+        os._exit(0)
+    url = sys.argv[1]
     getAll(url)
